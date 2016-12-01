@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+         <link rel="stylesheet" href="css/themes/mirian.css" />
+         <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        
+    </head>
+     
+    <body>
+            <div data-role="page" id="login">
+            <div data-role="header">
+                <legend> <h1> Registrate en nuestra página </h1> </legend>
+
+            </div>
+            <div data-role="main" class="ui-content">
+
+			<form id="formulario">
+      			<label for="nombredeusuario">Usuario</label>
+      			<input type="text" id="nombredeusuario" name="nombredeusuario" data-clear-btn="true">
+      			<label for="clave">Password</label>
+     			<input type="password" id="clave" name="clave" data-clear-btn="true">
+      			<a href="#menuprincipal" class="ui-btn">Entrar</a>
+			</form>	
+            </div>
+            <div data-role="footer"data-position="fixed">
+                            
+<br/>
+                <h5> Floristería Mirian Reina </h5>
+
+            </div>
+            </div>
+
+
+        <div data-role="page" id="menuprincipal">
+            <div data-role="header">
+                <h1>Menú Principal</h1>
+            </div>
+        <div data-role="main" class="ui-content" id="menuprincipal">
+			<a data-role="button"href="#" class="ui-btn ui-mini ui-icon-user ui-btn-icon-left">Perfil</a>
+			<a data-role="button" href="#" class="ui-btn ui-mini ui-icon-eye ui-btn-icon-left">Ramos</a>
+            <a data-role="button" href="#" class="ui-btn ui-mini ui-icon-eye ui-btn-icon-left">Accesorios</a>
+			<a data-role="button" href="#" class="ui-btn ui-mini ui-icon-eye ui-btn-icon-left">Centros</a>
+
+        
+		</div>
+        <div data-role="footer"data-position="fixed">
+            <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a data-transition="fade" data-icon="phone" data-theme="a" id="id5" href="#contactar">Contactar</a></li>
+                        <li><a data-transition="fade" data-icon="action" data-theme="a" id="id4" href="#datos">Pedidos</a></li>
+                        <li><a href="http://www.floristeria.es/" data-transition="fade" data-icon="grid" data-rel="dialog" data-theme="a">Floristeria Mirian</a></li>
+                    </ul>
+            </div>
+                            
+<br/>
+            
+
+            </div>
+        </div>
+
+             <div data-role="page" id="datos">
+            <div data-role="header">
+                <h1>Datos:</h1>
+            </div>
+		<div data-role="main" class="ui-content">
+        <div data-role="content" data-position="center">
+                <form>
+                 <label for="nombre_fact"><b> Nombre: </b> </label>  <input type="text" id="nombre_fact" name="nombre_fact" required size="50"> <br/>
+                 <label for="apellidos_fact"><b> Apellidos: </b> </label>   <input type="text" id="apellidos_fact" name="apellidos_fact" required size="70">  <br/>
+                 <label for="direccion_fact"><b> Dirección: </b> </label>    <input type="text" id="direccion_fact" name="direccion_fact" required size="150"> <br/>
+                 <label for="cp_fact"><b> Código Postal: </b> </label>  <input type="text" name="cp_fact" id="cp_fact" pattern="{0-9}" id="cp_fact" name="cp_fact" minlength="5" maxlength="5" required size="5"> <br/>
+                  <label for="provincia_fact">
+                        <b> Provincia: </b> 
+                        </label>
+
+                        <select id="provincia_fact" name="provincia_fact">
+                            <option value="malaga" selected > Málaga </option>
+                            <option value="sevilla" > Sevilla </option>
+                            <option value="cordoba"> Córdoba </option>
+                            <option value="jaen" > Jaén </option>
+                            <option value="granada"> Granada </option>
+                            <option value="almeria" > Almería </option>
+                            <option value="huelva"> Huelva </option>
+                            <option value="cadiz" > Cádiz </option>
+                        
+                        </select>
+                        <br/>
+                  <label for="localidad_fact"><b> Localidad: </b> </label>    <input type="text" id="localidad_fact" name="localidad_fact" required size="30"> <br/>
+                  <label for="telefono_fact"><b> Teléfono: </b> </label>    <input type="tel" id="telefono_fact" name="telefono_fact" required size="9" minlength="9" maxlength="9"> <br/>
+
+                </form>
+                
+            </div>
+            <div data-role="footer"data-position="fixed">
+            <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a data-transition="fade" data-icon="phone" data-theme="a" id="id5" href="#contactar">Contactar</a></li>
+                        <li><a data-transition="fade" data-icon="action" data-theme="a" id="id4" href="#datos">Pedidos</a></li>
+                        <li><a href="http://www.floristeria.es/" data-transition="fade" data-icon="grid" data-rel="dialog" data-theme="a">Floristeria Mirian</a></li>
+                    </ul>
+            </div>
+                            
+<br/>
+            
+
+            </div>
+
+
+		</div>
+             </div>
+
+
+         <div data-role="page" id="contactar">
+            <div data-role="header">
+                <h1>Nuestros datos</h1>
+            </div>
+		<div data-role="main" class="ui-content">
+        <div data-role="content" style="padding-bottom: 2em; margin: 0 auto; max-width: 450px !important;">
+		<h3 style="margin-top: 10px; text-align: center;">Contacta con nosotros</h3>
+
+               
+                 <h1>FLORISTERÍA MIRIAN </h1><br/>
+                 <h2>C/Virgen de la Sierra Nº43 Gilena (Sevilla)</h2><br/>
+                 <h2>Teléfono 666666666 email:xxx@gmail.com</h2>
+                 
+                     
+            </div>
+             </div>
+         
+            <div data-role="footer"data-position="fixed">
+            <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a data-transition="fade" data-icon="phone" data-theme="a" id="id5" href="#contactar">Contactar</a></li>
+                        <li><a data-transition="fade" data-icon="action" data-theme="a" id="id4" href="#datos">Pedidos</a></li>
+                        <li><a href="http://www.floristeria.es/" data-transition="fade" data-icon="grid" data-rel="dialog" data-theme="a">Floristeria Mirian</a></li>
+                    </ul>
+            </div>
+           </div>
+                            
+<br/>
+            
+
+            </div>
+
+
+		</div>
+
+
+
+
+            <div data-role="page" id="paginauno">
+            <div data-role="header">
+                <legend> <h1> Mensaje para tarjeta </h1> </legend>
+
+            </div>
+            <div data-role="main" class="ui-content">
+                <form>
+                <label for="mensaje1"><b> Feliz cumpleaños: </b> </label>         <input type="radio" name="mensaje" id="mensaje1">    <br/>
+                <label for="mensaje2"><b> Feliz navidad: </b> </label>         <input type="radio" name="mensaje" id="mensaje2">    <br/>
+                <label for="mensaje3"><b> Feliz año nuevo: </b> </label>        <input type="radio" name="mensaje" id="mensaje3">    <br/>
+                <label for="mensaje4"><b> Feliz día: </b> </label>       <input type="radio" name="mensaje" id="mensaje4">   <br/>
+                <label for="checkbox1"><b> Mensaje personalizado </b> </label>       <input type="checkbox" name="checkbox1" id="checkbox1">  <br/> 
+                <textarea disabled rows="4" cols="20" maxlength="200" placeholder="Máximo 200 caracteres">  </textarea>   <br/>
+                
+                </form>
+            </div>
+            <div data-role="footer"data-position="fixed">
+                                <a href="#paginados" data-transition="slide" class="ui-btn">Ir a página dos</a>
+<br/>
+                <h5> Floristería Mirian Reina </h5>
+
+            </div>
+            </div>
+
+
+
+        <div data-role="page" id="paginados">
+            <div data-role="header">
+                <h1>   Dirección de facturación </h1> 
+            </div>
+            <div data-role="main" class="ui-content">
+                <form>
+                 <label for="nombre_fact"><b> Nombre: </b> </label>  <input type="text" id="nombre_fact" name="nombre_fact" required size="50"> <br/>
+                 <label for="apellidos_fact"><b> Apellidos: </b> </label>   <input type="text" id="apellidos_fact" name="apellidos_fact" required size="70">  <br/>
+                 <label for="direccion_fact"><b> Dirección: </b> </label>    <input type="text" id="direccion_fact" name="direccion_fact" required size="150"> <br/>
+                 <label for="cp_fact"><b> Código Postal: </b> </label>  <input type="text" name="cp_fact" id="cp_fact" pattern="{0-9}" id="cp_fact" name="cp_fact" minlength="5" maxlength="5" required size="5"> <br/>
+                  <label for="provincia_fact">
+                        <b> Provincia: </b> 
+                        </label>
+
+                        <select id="provincia_fact" name="provincia_fact">
+                            <option value="malaga" selected > Málaga </option>
+                            <option value="sevilla" > Sevilla </option>
+                            <option value="cordoba"> Córdoba </option>
+                            <option value="jaen" > Jaén </option>
+                            <option value="granada"> Granada </option>
+                            <option value="almeria" > Almería </option>
+                            <option value="huelva"> Huelva </option>
+                            <option value="cadiz" > Cádiz </option>
+                        
+                        </select>
+                        <br/>
+                  <label for="localidad_fact"><b> Localidad: </b> </label>    <input type="text" id="localidad_fact" name="localidad_fact" required size="30"> <br/>
+                  <label for="telefono_fact"><b> Teléfono: </b> </label>    <input type="tel" id="telefono_fact" name="telefono_fact" required size="9" minlength="9" maxlength="9"> <br/>
+
+                </form>
+                
+            </div>
+            <div data-role="footer"data-position="fixed">
+                <a href="#paginatres"data-transition="flip" class="ui-btn">Ir a página tres </a>
+                <a class="ui-btn" data-rel="back">Página anterior</a>
+                <h5> Floristería Mirian Reina </h5>
+            </div>
+        </div>
+
+
+
+                 <div data-role="page" id="paginatres">
+                            <div data-role="header">
+                                 <h1> Dirección de envío </h1> 
+                            </div>
+                            <div data-role="main" class="ui-content">
+                                 <form>
+
+                            <label for="checkbox1"> <b> Utilizar datos de la dirección de facturación </b> </label><input type="checkbox" id="checkbox2" name="checkbox2"></input>
+                             <label for="nombre_envio"><b> Nombre: </b> </label>  <input type="text" id="nombre_envio" name="nombre_envio" required size="50"> <br/>
+                             <label for="apellidos_envio"><b> Apellidos: </b> </label>   <input type="text" id="apellidos_envio" name="apellidos_envio" required size="70">  <br/>
+                             <label for="direccion_envio"><b> Dirección: </b> </label>    <input type="text" id="direccion_envio" name="direccion_envio" required size="150"> <br/>
+                            <label for="cp_envio"><b> Código Postal: </b> </label>  <input type="text" name="cp_envio" id="cp_envio" pattern="{0-9}" id="cp_envio" name="cp_fact" minlength="5" maxlength="5" required size="5"> <br/>
+                            <label for="provincia_envio">
+                                <b> Provincia: </b> 
+                                    </label>
+
+                                          <select id="provincia_envio" name="provincia_envio">
+                                                    <option value="malaga" selected > Málaga </option>
+                                                    <option value="sevilla" > Sevilla </option>
+                                                    <option value="cordoba"> Córdoba </option>
+                                                    <option value="jaen" > Jaén </option>
+                                                    <option value="granada"> Granada </option>
+                                                    <option value="almeria" > Almería </option>
+                                                    <option value="huelva"> Huelva </option>
+                                                    <option value="cadiz" > Cádiz </option>
+                        
+                                            </select>
+                                     <br/>
+                                 <label for="localidad_envio"><b> Localidad: </b> </label>    <input type="text" id="localidad_envio" name="localidad_envio" required size="30"> <br/>
+                                <label for="telefono_envio"><b> Teléfono: </b> </label>    <input type="tel" id="telefono_envio" name="telefono_envio" required size="9" minlength="9" maxlength="9"> <br/>
+                   </form>
+
+            </div>
+            <div data-role="footer"data-position="fixed">
+                <a href="#paginacuatro"data-transition="flip" class="ui-btn">Ir a página cuatro </a>
+                <a class="ui-btn" data-rel="back">Página anterior</a>
+                <h5> Floristería Mirian Reina </h5>
+            </div>
+        </div>
+                        <div data-role="page" id="paginacuatro">
+                            <div data-role="header">
+                                    <h1> Seleccione la fecha de envío </h1>
+                            </div>
+                            <div data-role="main" class="ui-content">
+                                 <form>
+                                        <label for="fecha_envio">Fecha de envío </label> <input type="date" name="fecha_envio" id="fecha_envio">
+                    </form>
+
+                                </div>
+                                <div data-role="footer"data-position="fixed">
+                                    
+                                    <h5> Floristería Mirian Reina </h5>
+                                </div>
+                            </div>
+                            <div data-role="page" id="paginacinco">
+                                 <div data-role="header">
+                                      <h1> Forma de pago </h1>
+                            </div>
+                            <div data-role="main" class="ui-content">
+                                 <form>
+                    
+                                <label for="tarjeta1"><b> Visa </b> </label> <input type="radio" name="tarjeta" id="tarjeta1">    <br/>
+                                <label for="tarjeta2"><b> Mastercard </b> </label> <input type="radio" name="tarjeta" id="tarjeta2">    <br/>
+                                <label for="tarjeta3"><b> American Express </b> </label> <input type="radio" name="tarjeta" id="tarjeta3">    <br/>
+                                
+                                <label for="numerotarjeta"> <b> Número de la tarjeta </b> </label> <input type="text" name="numerotarjeta" id="numerotarjeta" pattern="{0-9}" minlength="12" maxlength="12" required size="12"> <br/>
+                                
+                                 <label for="caducidad_tarjeta_ano">
+                                <b> Fecha de caducidad de la tarjeta </b>
+                                 </label>
+
+                            
+                                
+
+                             <select id="caducidad_tarjeta_ano" name="caducidad_tarjeta_ano">
+                                        <option value="2016" selected > 2016 </option>
+                                        <option value="2017" > 2017 </option>
+                                        <option value="2018"> 2018 </option>
+                                        <option value="2019" > 2019 </option>
+                                        <option value="2020"> 2020 </option>
+                                        <option value="2021" > 2021 </option>
+                                        <option value="2022"> 2022 </option>
+                                        <option value="2023" > 2023 </option>
+                                    
+                        </select>
+                        <select id="caducidad_tarjeta_mes" name="caducidad_tarjeta_mes">
+                            <option value="1" selected > 1 </option>
+                            <option value="2" > 2 </option>
+                            <option value="3"> 3 </option>
+                            <option value="4" > 4 </option>
+                            <option value="5"> 5 </option>
+                            <option value="6" > 6 </option>
+                            <option value="7"> 7 </option>
+                            <option value="8" > 8 </option>
+                            <option value="9" > 9 </option>
+                            <option value="10" > 10 </option>
+                            <option value="11" > 11 </option>
+                            <option value="12" > 12 </option>
+                        </select>
+                        <br/>
+                        
+                        <label for="cvv"> <b> CVV </b> </label> <input type="text" name="cvv" id="cvv" pattern="{0-9}" minlength="3" maxlength="3" required size="3"> <br/>
+                        
+                     </form>
+                       
+                            </div>
+                                <div data-role="footer"data-position="fixed">
+                                      <a href="#paginaseis"data-transition="flip" class="ui-btn">Ir a página seis </a>
+                       <a class="ui-btn" data-rel="back">Página anterior</a>
+                                    <h5> Floristería Mirian Reina </h5>
+                                </div>
+                            </div>
+                            <div data-role="page" id="paginaseis">
+                                 <div data-role="header">
+                        
+                                     <h1> Crear cuenta </h1> 
+                                      </div>
+                            <div data-role="main" class="ui-content">
+                                 <form> 
+                        
+                        Email de registro: <label for="emailcuenta"> <input type="email" name="emailregistro" id="emailregistro" minlength="10" minlength="50" size="20"> </label> <br/>
+                        Contraseña: <label for="passcuenta"> <input type="password" name="passwordusuario" id="passwordusuario" size="20" minlength="8"></label><br/>
+                        Repita su contraseña: <label for="repitepasscuenta"> <input type="password" name="passwordusuariorepetida" id="passwordusuariorepetida" size="20" minlength="8"></label><br/>
+                                    </form> 
+                        
+                        <input type="button" value="Registrarse">
+                        </div>
+                                <div data-role="footer">
+                                    <a class="ui-btn" data-rel="back">Página anterior</a>
+                                    <h5> Floristería Mirian Reina </h5>
+                                </div>
+                            </div>
+
+
+     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>       
+    </body>
+</html>
